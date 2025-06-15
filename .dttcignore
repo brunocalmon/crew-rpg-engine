@@ -1,0 +1,44 @@
+# === Diretórios a ignorar completamente ===
+.github/
+.instruction/
+.venv/
+notebooks/
+outputs/
+planning/
+tests/
+
+# === Arquivos auxiliares não necessários na estrutura ===
+.dttcignore
+.env.sample
+.gitignore
+uv.lock
+
+# === Arquivos e pastas comuns a ambientes ou builds ===
+__pycache__/
+*.py[co]
+*.so
+*.egg-info/
+*.spec
+build/
+dist/
+pyinstaller_cache/
+.wheels/
+
+# === IDEs e editores ===
+.vscode/
+.idea/
+
+# === Sistema operacional ===
+.DS_Store
+Thumbs.db
+
+# === Documentação gerada ===
+docs/_build/
+
+# === Jupyter notebooks ===
+*.ipynb
+.ipynb_checkpoints/
+
+# === Arquivos temporários ou de backup ===
+*.tmp
+*~

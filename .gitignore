@@ -1,61 +1,51 @@
-.dttcignore
+# === Custom entries (keep these) ===
 .github/
 .python-version
 notebooks/
 dir-to-text/
 
-# Python-generated files
+# === Python artifacts ===
 __pycache__/
 *.py[oc]
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.spec
 wheels/
-*.egg-info
-.e
-# Jupyter Notebook checkpoints
+
+# === Environment & config ===
+.env
+*.local
+*.tmp
+
+# === Jupyter & notebooks ===
+*.ipynb
 .ipynb_checkpoints/
 
-# Coverage reports
+# === Coverage, testing, typing ===
 .coverage
 .coverage.*
-# Pytest cache
-.pytest_cache/
-# Mypy cache
-.mypy_cache/
-# Sphinx documentation
-docs/_build/
-# PyCharm project files
-.idea/
-# VS Code settings
-.vscode/
-# Local configuration files
-*.local
-# Environment variables
-.env
-# Temporary files
-*.tmp
-# MacOS system files
-.DS_Store
-# Windows system files
-Thumbs.db
-# Backup files
-*~
-# Python bytecode files
-*.pyc
-# Cython files
-*.so
-# Jupyter Notebook metadata
-*.ipynb
-# PyInstaller
-# PyInstaller files
-*.spec
-# PyInstaller build directory
-build/
-# PyInstaller dist directory
-dist/
-# PyInstaller cache directory
-pyinstaller_cache/
-# Coverage reports
 coverage.xml
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-# Local configuration files
-*.local
+.pytest_cache/
+.mypy_cache/
+
+# === Build & distribution ===
+build/
+dist/
+pyinstaller_cache/
+
+# === IDE & editor folders ===
+.vscode/
+.idea/
+
+# === Documentation ===
+docs/_build/
+
+# === OS system files ===
+.DS_Store
+Thumbs.db
+
+# === Backup files ===
+*~
