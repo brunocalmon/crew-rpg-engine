@@ -1,0 +1,32 @@
+[project]
+name = "crew"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "jupyter",
+    "pytest",
+    "notebook",
+    "python-dotenv",
+    "crewai_tools",
+    "langchain_community",
+    "crewai",
+]
+
+[project.scripts]
+crew-main = "crew.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+test = ["pytest==8.2.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+python_files = ["test_*.py"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crew"]
